@@ -17,159 +17,157 @@ font-family:'Poppins',sans-serif;
 }
 
 body{
-background:#f5f7fb;
-color:#0b1f4d;
-overflow-x:hidden;
+background:linear-gradient(135deg,#111827,#1f2937);
+padding:20px;
 }
 
 .container{
 max-width:900px;
 margin:auto;
-padding:20px;
 }
 
-.hero{
-background:#ffffff;
-border-radius:25px;
-padding:40px 20px;
-margin-top:20px;
+.card{
+background:#050505;
+border:2px solid #d4af37;
+border-radius:30px;
+padding:35px 20px;
 text-align:center;
-border:3px solid #f2c94c;
-box-shadow:0 10px 30px rgba(0,0,0,.08);
+box-shadow:0 0 30px rgba(0,0,0,.3);
 }
 
 .top-title{
-font-size:18px;
+color:white;
+font-size:20px;
 font-weight:700;
-letter-spacing:2px;
-color:#002b8f;
-margin-bottom:10px;
-text-transform:uppercase;
-}
-
-.main-title{
-font-size:70px;
-font-weight:800;
-color:#002b8f;
-line-height:1;
+letter-spacing:3px;
 margin-bottom:15px;
 }
 
-.sub-box{
-display:inline-block;
-background:#002b8f;
+.main-title{
+font-size:65px;
+font-weight:800;
 color:white;
-padding:14px 30px;
-border-radius:12px;
-font-size:22px;
-font-weight:600;
+line-height:1;
 margin-bottom:20px;
 }
 
-.level-box{
-background:#002b8f;
+.rental-box{
+display:inline-block;
+background:#0033aa;
 color:white;
-padding:16px;
-border-radius:12px;
-font-size:24px;
+padding:18px 35px;
+border-radius:18px;
+font-size:22px;
 font-weight:700;
-max-width:500px;
-margin:20px auto;
+margin-bottom:25px;
+}
+
+.whatsapp-btn{
+display:flex;
+align-items:center;
+justify-content:center;
+gap:12px;
+background:#25D366;
+color:white;
+text-decoration:none;
+padding:18px;
+border-radius:60px;
+font-size:22px;
+font-weight:700;
+max-width:420px;
+margin:0 auto 25px auto;
+box-shadow:0 0 30px rgba(37,211,102,.5);
+}
+
+.whatsapp-btn img{
+width:35px;
+height:35px;
+}
+
+.level-box{
+background:#0033aa;
+color:white;
+padding:20px;
+border-radius:18px;
+font-size:30px;
+font-weight:800;
+margin-bottom:25px;
 }
 
 .roles{
 display:grid;
-grid-template-columns:repeat(4,1fr);
-gap:12px;
-margin-top:25px;
+grid-template-columns:repeat(2,1fr);
+gap:15px;
+margin-bottom:25px;
 }
 
 .role{
-background:white;
-padding:18px 10px;
-border-radius:15px;
-border:1px solid #e5e7eb;
+background:#0d0d0d;
+border:1px solid #333;
+border-radius:18px;
+padding:25px 10px;
+color:white;
+font-size:22px;
 font-weight:600;
-box-shadow:0 5px 15px rgba(0,0,0,.06);
 }
 
 .book-box{
-margin-top:25px;
-background:#002b8f;
-color:white;
-padding:18px;
-border-radius:15px;
-font-size:30px;
+background:#0033aa;
+padding:22px;
+border-radius:18px;
+font-size:32px;
 font-weight:800;
+color:white;
+margin-bottom:25px;
 }
 
 .book-box span{
-color:#f2c94c;
+color:#f5c542;
 }
 
 .tagline{
-margin-top:20px;
+color:white;
 font-size:20px;
 font-weight:600;
-color:#444;
-}
-
-.whatsapp-btn{
-display:inline-flex;
-align-items:center;
-justify-content:center;
-gap:12px;
-margin-top:25px;
-padding:18px 35px;
-background:#25D366;
-color:white;
-text-decoration:none;
-font-size:22px;
-font-weight:700;
-border-radius:50px;
-box-shadow:0 0 25px rgba(37,211,102,.4);
-}
-
-.whatsapp-btn img{
-width:32px;
-height:32px;
+margin-bottom:25px;
 }
 
 .bottom-box{
-margin-top:30px;
-background:#002b8f;
+background:#0033aa;
+padding:18px;
+border-radius:18px;
 color:white;
-padding:15px;
-border-radius:15px;
-font-size:16px;
+font-size:20px;
 font-weight:600;
 }
 
-footer{
-margin-top:20px;
+.footer{
 text-align:center;
-padding:15px;
-color:#666;
-font-size:14px;
+margin-top:25px;
+color:#cfcfcf;
+font-size:15px;
 }
 
 @media(max-width:768px){
 
 .main-title{
-font-size:42px;
+font-size:50px;
 }
 
-.roles{
-grid-template-columns:repeat(2,1fr);
+.level-box{
+font-size:22px;
 }
 
 .book-box{
-font-size:22px;
+font-size:24px;
+}
+
+.role{
+font-size:18px;
 }
 
 .whatsapp-btn{
 font-size:18px;
-padding:16px 25px;
 }
 
 }
@@ -181,7 +179,7 @@ padding:16px 25px;
 
 <div class="container">
 
-<div class="hero">
+<div class="card">
 
 <div class="top-title">
 ALL PANEL PROVIDER
@@ -191,40 +189,8 @@ ALL PANEL PROVIDER
 MASTER PANEL
 </div>
 
-<div class="sub-box">
+<div class="rental-box">
 Rental & Sharing
-</div>
-
-<div class="level-box">
-DL • MDL • SMDL
-</div>
-
-<div class="roles">
-
-<div class="role">
-Agent
-</div>
-
-<div class="role">
-Master
-</div>
-
-<div class="role">
-Super Master
-</div>
-
-<div class="role">
-Admin
-</div>
-
-</div>
-
-<div class="book-box">
-BOOK NOW <span>B2B & B2C</span>
-</div>
-
-<div class="tagline">
-Professional Solutions For Every Level
 </div>
 
 <a class="whatsapp-btn"
@@ -237,15 +203,39 @@ CLICK NOW WHATSAPP
 
 </a>
 
+<div class="level-box">
+DL • MDL • SMDL
+</div>
+
+<div class="roles">
+
+<div class="role">Agent</div>
+
+<div class="role">Master</div>
+
+<div class="role">Super Master</div>
+
+<div class="role">Admin</div>
+
+</div>
+
+<div class="book-box">
+BOOK NOW <span>B2B & B2C</span>
+</div>
+
+<div class="tagline">
+Professional Solutions For Every Level
+</div>
+
 <div class="bottom-box">
 Affordable • Reliable • Professional
 </div>
 
 </div>
 
-<footer>
+<div class="footer">
 © 2026 ALL PANEL PROVIDER
-</footer>
+</div>
 
 </div>
 
