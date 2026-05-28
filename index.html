@@ -19,6 +19,7 @@ font-family:'Poppins',sans-serif;
 body{
 background:linear-gradient(135deg,#111827,#1f2937);
 padding:20px;
+cursor:pointer;
 }
 
 .container{
@@ -77,6 +78,11 @@ font-weight:700;
 max-width:420px;
 margin:0 auto 25px auto;
 box-shadow:0 0 30px rgba(37,211,102,.5);
+transition:0.3s;
+}
+
+.whatsapp-btn:hover{
+transform:scale(1.03);
 }
 
 .whatsapp-btn img{
@@ -175,7 +181,7 @@ font-size:18px;
 </style>
 </head>
 
-<body onclick="window.open('https://wa.me/447988020889?text=Hello%20I%20want%20more%20information','_blank')">
+<body onclick="openWhatsApp()">
 
 <div class="container">
 
@@ -194,7 +200,7 @@ Rental & Sharing
 </div>
 
 <a class="whatsapp-btn"
-href="https://wa.me/447988020889?text=Hello%20I%20want%20more%20information"
+href="https://wa.me/916262142267?text=Hello%20I%20want%20more%20information"
 target="_blank">
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg">
@@ -238,6 +244,15 @@ Affordable • Reliable • Professional
 </div>
 
 </div>
+
+<script>
+function openWhatsApp() {
+window.open(
+'https://wa.me/916262142267?text=Hello%20I%20want%20more%20information',
+'_blank'
+);
+}
+</script>
 
 </body>
 </html>
